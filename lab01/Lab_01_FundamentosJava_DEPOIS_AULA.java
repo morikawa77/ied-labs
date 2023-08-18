@@ -52,19 +52,21 @@ public class Lab_01_FundamentosJava_DEPOIS_AULA {
 			    
  			    case 2: System.out.println("Atividade 2: for -> caracteres do alfabeto !\n");
  					    // exibição dos caracteres
-			 	 	    // AQUI...
+							for(char letra = 'a'; letra <= 'z'; letra++){
+								System.out.print(letra + "  ");
+							}
 					    break;
 				
 			    case 3: System.out.println("Atividade 3: while -> múltiplos de 3 !\n");
 					    // declaração de variável para esta Atividade
 					    int valor_inicial;
 					    // obtenção dos valor via teclado
-				        System.out.println("Informe o valor de início da série: ");
+				      System.out.println("Informe o valor de início da série: ");
 					    valor_inicial = teclado.nextInt();
  					    // exibição dos múltiplos
 					    for ( int i = valor_inicial; i <= 100; i++ ) {
 								if ( i % 3 == 0 ) {
-									System.out.println(i);
+								System.out.println(i);
 								}
 							}
 					    break;
@@ -73,26 +75,30 @@ public class Lab_01_FundamentosJava_DEPOIS_AULA {
 					    // declaração de variáveis para esta Atividade
 					    int horas, minutos, segundos;
 					    // obtenção dos valores via teclado
-				        System.out.print("Informe a quantidade de horas    (entre 0 e 23): ");
+				      System.out.print("Informe a quantidade de horas    (entre 0 e 23): ");
 					    horas = teclado.nextInt();
-				        System.out.print("Informe a quantidade de minutos  (entre 0 e 59): ");
+				      System.out.print("Informe a quantidade de minutos  (entre 0 e 59): ");
 					    minutos = teclado.nextInt();
-				        System.out.print("Informe a quantidade de segundos (entre 0 e 59): ");
+				      System.out.print("Informe a quantidade de segundos (entre 0 e 59): ");
 					    segundos = teclado.nextInt();
 					    // cálculo e exibição do resultado
 					    System.out.print("Quantidade equivalente em segundos: ");
-                        //System.out.println(AQUI...);
+							System.out.print(horas * 3600 + minutos * 60 + segundos);
 				        break;	
 				
 			    case 5: System.out.println("Atividade 5: transformação para horas e minutos !\n");
 					    // declaração de variável para esta Atividade
 					    int qtdMinutos;
 					    // obtenção do valor via teclado
-				        System.out.print("Informe a quantidade total de minutos (entre 0 e 1439): ");
+				      System.out.print("Informe a quantidade total de minutos (entre 0 e 1439): ");
 					    qtdMinutos = teclado.nextInt();
 					    // transformação e exibição do resultado
-                        // AQUI...
-				        break;	
+							if (qtdMinutos > 1439) {
+								System.out.print("Valor inválido");
+								break;
+							}
+              System.out.print(qtdMinutos/60 + " horas e " + qtdMinutos % 60 + " minutos.");
+				      break;	
 								
 			    case 9: System.out.println("Sair ...\n");
 				        break;
