@@ -2,11 +2,11 @@
 import java.util.Scanner;
 
 // classe que contém o PROGRAMA PRINCIPAL ('main')
-public class Lab_01_ReginaldoMorikawa {
+public class Metodos {
 
     // PROGRAMA PRINCIPAL
 	// ------------------
-	public static void main(String[] args) throws Exception {
+	public void executaTudo() {
         //System.out.println("Hello, World!");
 
         // criação de um objeto 'Scanner' para a interação com o teclado
@@ -110,17 +110,8 @@ public class Lab_01_ReginaldoMorikawa {
 
         teclado.close();
 
-		// identificação do autor do trabalho
-		System.out.println();
-		System.out.println("---------------------------------");
-		System.out.println("ESTRUTURAS DE DADOS - 2023/2S");
-		System.out.println("Lab.: FUNDAMENTOS DE JAVA");
-		System.out.println("---------------------------------");
-		System.out.println("Nome: REGINALDO MORIKAWA");
-		System.out.println("R.A.: 121 092 231 1 022");
-		System.out.println("---------------------------------");
-		System.out.println();
-	
-    }
+				Autor autor = new Autor();
+				autor.exibeDadosAutor();
+		}
 
 }
