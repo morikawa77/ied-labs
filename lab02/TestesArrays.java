@@ -12,7 +12,9 @@ public class TestesArrays {
 
         // percurso do array para exibição do nome
         System.out.print("\nMeu nome completo é");
-        // AQUI ...
+        for (String nome: nomes) {
+            System.out.print(" " + nome);
+        }
         System.out.println(".");
 
     }
@@ -25,15 +27,23 @@ public class TestesArrays {
     private void exibeArrayInt() {
 
         // declaração do array de int
+        int[] numeros = new int[10];
         
         // criação de uma instância (objeto) da classe 'MetodosAvulsos' para permitir o acesso
         // aos respectivos métodos
+        MetodosAvulsos metodos = new MetodosAvulsos();
         
         // preenchimento dos valores dos elementos do array com números randômicos
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = metodos.geraNumeroRandomico(10, 50);
+        }
         
         // percurso do array para exibição dos números
         System.out.print("\nOs números gerados foram:");
         System.out.println();
+        for (int numero: numeros) {
+            System.out.print(numero + " ");
+        }
 
     }
 
@@ -49,6 +59,12 @@ public class TestesArrays {
 
         // percurso do array bidimensional para exibição dos números
         System.out.println("\nOs números armazenados na matriz são:");
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.print("\n");
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+        }
 
     }
 
