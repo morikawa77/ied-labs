@@ -44,7 +44,7 @@ public class TestesArrays {
         for (int numero: numeros) {
             System.out.print(numero + " ");
         }
-
+        System.out.println(".");   
     }
 
     // Ação 3
