@@ -4,15 +4,13 @@ public class TestesStrings {
     // Ação 1
     // Criar uma String para cada palavra do próprio nome
     // Aqui, confunde-se com a própria definição dos atributos (constantes, no caso)
-    final String nome1 = "Carlos";
-    final String nome2 = "Magnus";
-    final String nome3 = "Carlson";
-    final String nome4 = "Filho";
+    final String nome1 = "Reginaldo";
+    final String nome2 = "Morikawa";
 
     // Ação 2
     // Criar uma nova String que, por concatenação, resulta no nome completo
     private String montaNomeCompleto () {
-        return nome1 + " " + nome2 + " " + nome3 + " " + nome4;
+        return nome1 + " " + nome2;
     }
 
     // Ação 3
