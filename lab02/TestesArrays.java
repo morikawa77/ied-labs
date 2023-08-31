@@ -62,9 +62,46 @@ public class TestesArrays {
         for (int i = 0; i < matriz.length; i++) {
             System.out.println();
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
+                // System.out.print(matriz[i][j] + " ");
+                System.out.printf(" %2d", matriz[i][j]);
             }
         }
+        System.out.println();
+
+    }
+
+    // Ação 4
+    // Criar um array bidimensional (matriz) de 3 linhas e 2 colunas,
+    // inicialmente vazio, para armazenar objetos 'String'.
+    // Cada linha corresponde a um aluno.
+    // A primeira coluna armazena o RA e a segunda armazena o nome.
+    // Preencha a matriz com valores arbitrários.
+    // Utilizar o comando 'for' (convencional, que utiliza um contador)
+    // e a propriedade 'length' para exibir o conteúdo da matriz.
+    private void exibeArrayBidimensionalStrings() {
+
+        // declaração do array bidimensional 3x2 de 'String', inicialmente vazio
+        String[][] alunos = new String[3][2];
+
+        // preenchimento com valores arbitrários
+       alunos[0][0] = "121 092 231 1 022";
+       alunos[0][1] = "Reginaldo Morikawa";
+       alunos[1][0] = "121 092 231 1 023";
+       alunos[1][1] = "José da Silva";
+       alunos[2][0] = "121 092 231 1 024";
+       alunos[2][1] = "Maria de Souza";
+       
+
+
+        // percurso do array bidimensional para exibição dos dados dos alunos
+        System.out.println("\nOs dados dos alunos armazenados na matriz são:");
+        for (int i = 0; i < alunos.length; i++) {
+            System.out.println();
+            for (int j = 0; j < alunos[i].length; j++) {
+                System.out.print(alunos[i][j] + " ");
+            }
+        }
+        System.out.println();
 
     }
 
@@ -79,6 +116,8 @@ public class TestesArrays {
 
         // exibe array bidimensional
         exibeArrayBidimensional();
+
+        exibeArrayBidimensionalStrings();
         
     }
     
