@@ -60,7 +60,7 @@ public class TestesArrays {
         // percurso do array bidimensional para exibição dos números
         System.out.println("\nOs números armazenados na matriz são:");
         for (int i = 0; i < matriz.length; i++) {
-            System.out.print("\n");
+            System.out.println();
             for (int j = 0; j < matriz[i].length; j++) {
                 System.out.print(matriz[i][j] + " ");
             }
