@@ -8,7 +8,7 @@ public class TestesArrays {
     private void exibeNomeCompleto() {
 
         // declaração do array de Strings
-        String[] nomes = { "Carlos", "Magnus", "Carlson", "Filho" };
+        String[] nomes = { "Reginaldo", "Morikawa"};
 
         // percurso do array para exibição do nome
         System.out.print("\nMeu nome completo é");
